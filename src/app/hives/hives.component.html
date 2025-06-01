@@ -21,7 +21,7 @@
       <tbody>
         @for (hive of hives; track $index) {
         <tr (click)="viewHive(hive.hive_id)">
-          <th scope="row">{{$index}}</th>
+          <th scope="row">{{$index + 1}}</th>
           <td>{{hive.hive_name}}</td>
           <td>{{hive.num_boxes}}</td>
           <td>{{hive.active == true ? 'Active' : 'Not Active'}}</td>

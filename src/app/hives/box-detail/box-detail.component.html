@@ -9,6 +9,7 @@
         <tr>
             <th scope="col">Box Name</th>
             <th scope="col"># of Frames</th>
+            <th scope="col">Type</th>
             <th scope="col">Overwinter</th>
             <th scope="col">Active</th>
             <th scope="col">Edit</th>
@@ -19,6 +20,7 @@
         <tr>
             <td>{{box.box_name}}</td>
             <td>{{box.num_frames}}</td>
+            <td>{{box.box_type}}</td>
             <td>{{box.overwinter ? 'Overwinter' : 'Not Overwinter'}}</td>
             <td>{{box.active ? 'Active' : 'Not Active'}}</td>
             <td><button class="material-symbols-outlined edit-button" (click)="editBox(box.box_id)">edit</button></td>

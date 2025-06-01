@@ -58,7 +58,7 @@ export class HivesService {
     const httpOptions = {
       headers: new HttpHeaders({ 'Content-Type': 'application/json' }),
     };
-    return this.http.put<Hive>(`${this.baseURL}/${hiveID}/boxes`, num_boxes, httpOptions).pipe(
+    return this.http.patch<Hive>(`${this.baseURL}/${hiveID}/boxes`, num_boxes, httpOptions).pipe(
       retry(3),
         catchError(this.handleError)
     );

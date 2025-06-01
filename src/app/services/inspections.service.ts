@@ -50,7 +50,7 @@ export class InspectionService {
       headers: new HttpHeaders({ 'Content-Type': 'application/json' }),
     };
     return this.http
-      .put<Inspection>(`${this.baseURL}/${ID}/notes`, notes, httpOptions)
+      .patch<Inspection>(`${this.baseURL}/${ID}/notes`, notes, httpOptions)
       .pipe(
         retry(3),
         catchError(this.handleError)

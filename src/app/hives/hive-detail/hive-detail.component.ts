@@ -7,10 +7,11 @@ import { FormsModule } from '@angular/forms';
 import { BoxDetailComponent } from "../box-detail/box-detail.component";
 import { HeaderComponent } from "../../header/header.component";
 import { AlertsComponent } from "../../alerts/alerts.component";
+import { LoadingComponent } from "../../loading/loading.component";
 
 @Component({
   selector: 'app-hive-detail',
-  imports: [FormsModule, CommonModule, BoxDetailComponent, HeaderComponent, AlertsComponent],
+  imports: [FormsModule, CommonModule, BoxDetailComponent, HeaderComponent, AlertsComponent, LoadingComponent],
   templateUrl: './hive-detail.component.html',
   styleUrl: './hive-detail.component.css'
 })

@@ -13,6 +13,7 @@
 .frame-container {
   height: 350px;
   max-width: 60px;
+  min-width: 30px;
   box-sizing: border-box;
   display: flex;
   justify-content: center;

@@ -7,10 +7,11 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { HeaderComponent } from "../header/header.component";
 import { AlertsComponent } from "../alerts/alerts.component";
+import { LoadingComponent } from "../loading/loading.component";
 
 @Component({
   selector: 'app-search',
-  imports: [FormsModule, CommonModule, HeaderComponent, AlertsComponent],
+  imports: [FormsModule, CommonModule, HeaderComponent, AlertsComponent, LoadingComponent],
   templateUrl: './search.component.html',
   styleUrl: './search.component.css'
 })

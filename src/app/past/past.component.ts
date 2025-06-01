@@ -4,10 +4,11 @@ import { Inspection, InspectionListItem } from '../bees.model';
 import { InspectionService } from '../services/inspections.service';
 import { HeaderComponent } from "../header/header.component";
 import { AlertsComponent } from "../alerts/alerts.component";
+import { LoadingComponent } from "../loading/loading.component";
 
 @Component({
   selector: 'app-past',
-  imports: [HeaderComponent, AlertsComponent],
+  imports: [HeaderComponent, AlertsComponent, LoadingComponent],
   templateUrl: './past.component.html',
   styleUrl: './past.component.css'
 })

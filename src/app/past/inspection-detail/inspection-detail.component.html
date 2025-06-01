@@ -2,6 +2,7 @@
 <div class="container">
   <app-alerts [error]="error" [message]="message" />
     @if (loading) {
+      <app-loading />
     <p>Loading...</p>
     }
     @if (!loading) {
